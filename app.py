@@ -66,9 +66,6 @@ def monitor_loop():
 
         time.sleep(1)
 
-# =====================
-# Flask routes
-# =====================
 @app.route("/start", methods=["POST"])
 def start_monitoring():
     if not monitoring.is_set():
